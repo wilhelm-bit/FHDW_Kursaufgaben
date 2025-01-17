@@ -5,7 +5,7 @@ void printLine(int starsToBePrinted, int spaceNeeded) {
             printf(" ");
     }
     for (int k = 0; k < starsToBePrinted; k++) {
-        printf("*");
+        printf("\033[47;30m \033[0m");
     }
     printf("\n");
 }
@@ -34,6 +34,6 @@ void printRombus(int n) {
 
 
 int main() {
-    printRombus(300);
+    printRombus(500);
     return 0;
 }
